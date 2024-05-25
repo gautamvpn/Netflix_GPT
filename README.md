@@ -2,6 +2,10 @@
 
 -create React App
 -Configured TailwindCSS
+-Header
+-Login Form
+-Sign up form
+
 
 
 ......
@@ -20,4 +24,4 @@
 
 -NetflixGPT
     -Search Bar
-    -Movie Suggestion
+    -Movie Suggestion 
