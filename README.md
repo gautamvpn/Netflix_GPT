@@ -15,6 +15,23 @@ Routing of App
 -Created Redux store with userSlice
 -Implemented SignOut
 -Update Profile API call
+-BugFix: sign up user displayName and profile picture update
+-BugFix: If the user is not logged in Redirect/browse to login page and vice versa.
+-Unsubscribe to the onAuthStateChanged callback.
+-Add hardcoded values to the constant file
+Register for TMDB API and create and app & get access token
+-Get Data from TMDP now playing movies list api
+-Custom hook for nowPlayingMovies
+-create store with movies Data 
+-Update store with movies Data
+-Planning for MainContainer & Secondary container
+-Fetch Data for Trailer Video
+-Update store with Trailer Video Data
+-Embedded the youtube video and make it autoplay and mute
+-Tailwind Classes to make main Container look awesome
+
+
+
 
 
 
