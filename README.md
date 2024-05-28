@@ -29,6 +29,7 @@ Register for TMDB API and create and app & get access token
 -Update store with Trailer Video Data
 -Embedded the youtube video and make it autoplay and mute
 -Tailwind Classes to make main Container look awesome
+-Build Secondary component
 
 
 
