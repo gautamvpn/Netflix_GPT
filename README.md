@@ -30,6 +30,11 @@ Register for TMDB API and create and app & get access token
 -Embedded the youtube video and make it autoplay and mute
 -Tailwind Classes to make main Container look awesome
 -Build Secondary component
+-Build the movie list
+-Build movie cart
+-TMDB image CDN URL
+-Made the Browse page amazing with tailwind CSS
+-Created the usePopular Movies,Top Rated, Upcoming custom hook
 
 
 
