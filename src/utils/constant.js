@@ -19,7 +19,7 @@ export const SUPPORTED_LANGUAGES = [
   {identifier:'spanish', name:"Spanish"},
 ]
 
-// export const OPENAI_KEY = "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"
+
 
 export const GEMINIAI_KEY = process.env.REACT_APP_GEMINIAI_KEY
 
