@@ -45,7 +45,7 @@ Register for TMDB API and create and app & get access token
 -Added .envfile
 
 
-
+..
 
 
 
