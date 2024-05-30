@@ -18,3 +18,10 @@ export const SUPPORTED_LANGUAGES = [
   {identifier:'hindi', name:"Hindi"},
   {identifier:'spanish', name:"Spanish"},
 ]
+
+// export const OPENAI_KEY = "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"
+export const OPENAI_KEY = "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"
+export const GEMINIAI_KEY = process.env.REACT_APP_GEMINIAI_KEY
+
+
+// AIzaSyAwOLla6BqOgug0nbeswBVsIoqBg-G4ESE
