@@ -20,7 +20,7 @@ export const SUPPORTED_LANGUAGES = [
 ]
 
 
-
+export const OPENAI_KEY = "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"
 export const GEMINIAI_KEY = process.env.REACT_APP_GEMINIAI_KEY
 
 
