@@ -38,13 +38,15 @@ Register for TMDB API and create and app & get access token
 -GPT search Page
 -GPT search Bar
 -(BONUS)Multi-language features in our app
--integrate GPT keys
--create gpt slice and movie data
--re-used movieList component
+-Get Open AI API key
+-Gpt Search API Call
+-fetched gptMovies Suggestion from TMDB
+-Created gptSlice added data
+-re-used movieList component to make movie suggestion container
 -Memoization
 -Added .envfile
-
-
+-Adding .env file to gitignore
+-Made site Responsive
 ..
 
 

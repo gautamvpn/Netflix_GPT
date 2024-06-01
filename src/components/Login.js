@@ -87,49 +87,34 @@ const Login = () => {
         setIsSignInForm(!isSignInForm)
     }
     return (
-        <div>
-            <Header />
-            <div className='absolute'>
-                <img src={bg_URL}
-                    alt="background_image" />
+            <div className='h-screen w-screen overflow-hidden'>
+                <Header />
+                <div className='absolute inset-0 bg-cover'>
+                    <img className='w-full h-full object-cover' src={bg_URL} alt="background_image"  />
+                </div>
+                <form
+                    onSubmit={(e) => e.preventDefault()}
+                    className='absolute p-12 bg-black w-ful md:w-3/12 my-10 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80 top-1/2 transform -translate-y-1/2'
+                >
+                    <h1 className='font-bold text-3xl py-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
+                    {!isSignInForm && (
+                        <input ref={name} type='text' placeholder='Full Name' className='p-4 my-4 w-full bg-gray-700' />
+                    )}
+                     {/* this ref will help us getting reference of input box. */}
+                    <input ref={email} type='text' placeholder='Email Address' className='p-4 my-4 w-full bg-gray-700' />
+                    <input ref={password} type='password' placeholder='Password' className='p-4 my-4 w-full bg-gray-700' />
 
+                     {/* for error msg displaying */}
+                    <p className='text-red-500 font-bold text-lg py-2'>{errorMessage}</p>
+                    <button className='p-4 my-6 bg-red-700 w-full rounded-lg' onClick={handleButtonClick}>
+                        {isSignInForm ? "Sign In" : "Sign Up"}
+                    </button>
+                    <p className='py-4 cursor-pointer' onClick={toggleSignInForm}>
+                        {isSignInForm ? "New to Netflix? Sign Up Now" : "Already registered? Sign In now"}
+                    </p>
+                </form>
             </div>
-            <form
-                onSubmit={(e) => e.preventDefault()}
-                className='absolute p-12 bg-black w-3/12 my-24 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-80'>
-                <h1 className='font-bold text-3xl py-4'>{isSignInForm ? "Sign In" : "Sign Up"}</h1>
-
-                {!isSignInForm && (
-                    <input ref={name} type='text' placeholder='Full Name'
-                        className='p-4 my-4 w-full bg-gray-700' />
-                )}
-
-                <input
-                    // this ref will help us getting reference of input box.
-                    ref={email}
-                    type='text' placeholder='Email Address'
-                    className='p-4 my-4 w-full bg-gray-700' />
-
-                <input
-
-                    ref={password}
-                    type='password' placeholder='Password'
-                    className='p-4 my-4 w-full bg-gray-700' />
-
-                {/* for error msg displaying */}
-                <p className='text-red-500 font-bold text-lg py-2'>{errorMessage}</p>
-
-                <button className='p-4 my-6 bg-red-700 w-full rounded-lg'
-                    onClick={handleButtonClick}>
-                    {isSignInForm ? "Sign In" : "Sign Up"}
-                </button>
-
-                <p className='py-4 cursor-pointer' onClick={toggleSignInForm}>
-                    {isSignInForm ? "New to Netflix ? Sign Up Now" : "Already regustered Sign In now"}
-                </p>
-            </form>
-        </div>
-    )
+        );
 }
 
 export default Login
